@@ -1,0 +1,13 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: $spacing-3;
+  padding-bottom: $spacing-3;
+
+  & > .title__page {
+    font-size: $font-size-desktop-heading-1;
+    font-weight: bold;
+    color: $color-green;
+  }
+}
