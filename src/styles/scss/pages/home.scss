@@ -1,0 +1,9 @@
+.home__container {
+  & > .tags__category-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 12px;
+  }
+}

@@ -1,0 +1,11 @@
+.category__tag {
+  cursor: pointer;
+  font-weight: normal;
+  font-size: $font-size-desktop-body-1;
+  color: $color-black;
+  transition: all $transition-time;
+  &.active {
+    font-weight: bold;
+    color: $color-green;
+  }
+}

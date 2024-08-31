@@ -5,7 +5,7 @@ interface IFooterProps {}
 const Footer = (): HTMLElement => {
   const footerElement = DocumentElement({
     tagElement: 'footer',
-    className: ['footer__container'],
+    className: ['footer__container', 'container'],
     textContent: 'Footer',
   });
 

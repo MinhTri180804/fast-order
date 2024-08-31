@@ -6,6 +6,7 @@ interface IDocumentElement extends ICoreElement {
   textContent?: string;
   redirect?: string;
   href?: string;
+  handleClick?: (e: Event) => void;
 }
 
 const DocumentElement = ({
@@ -17,6 +18,7 @@ const DocumentElement = ({
   href,
   className,
   id,
+  handleClick,
 }: IDocumentElement): HTMLElement => {
   const element = document.createElement(tagElement);
 
@@ -61,6 +63,10 @@ const DocumentElement = ({
 
   if (textContent) {
     element.textContent = textContent;
+  }
+
+  if (handleClick) {
+    element.addEventListener('click', handleClick);
   }
 
   return element;

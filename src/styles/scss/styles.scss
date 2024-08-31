@@ -1,6 +1,19 @@
 @import './core/reset';
 @import './core/variables';
+
+// Components
 @import './components/header.scss';
+@import './components/searchInput.scss';
+@import './components/categoryTags.scss';
+
+// Pages
+@import './pages/home.scss';
+
+// Global styles
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: 'Be Vietnam Pro', system-ui;
   font-weight: 400;

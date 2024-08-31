@@ -130,16 +130,77 @@ table {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 22px;
 }
 header > .title__page {
   font-size: 32px;
   font-weight: bold;
   color: #00643e;
+}
+header > .search__container {
+  width: 100%;
+}
+
+.search__input-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #dddddd;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.search__input-container > input {
+  padding: 12px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background-color: #f4f4f4;
+}
+.search__input-container > input::placeholder {
+  color: #2d2d2d;
+}
+.search__input-container > .search__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 12px;
+}
+.search__input-container > .search__icon > svg {
+  width: 24px;
+  height: 24px;
+}
+
+.category__tag {
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 16px;
+  color: #2d2d2d;
+  transition: all 0.3s;
+}
+.category__tag.active {
+  font-weight: bold;
+  color: #00643e;
+}
+
+.home__container > .tags__category-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 12px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html {

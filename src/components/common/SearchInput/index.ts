@@ -15,10 +15,9 @@ const SearchInputComponent = (): HTMLElement => {
   });
 
   const iconSearch = SearchIcon();
-  console.log(iconSearch);
 
-  searchInputElement.appendChild(inputElement);
   searchInputElement.appendChild(iconSearch);
+  searchInputElement.appendChild(inputElement);
 
   return searchInputElement;
 };
