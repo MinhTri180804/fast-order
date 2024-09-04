@@ -1,12 +1,30 @@
+import RootLayout from '../layouts/Root';
+import HomePage from '../pages/Home';
+
+function appendBody(elements: HTMLElement | HTMLElement[]) {
+  if (Array.isArray(elements)) {
+    for (const element of elements) {
+      document.body.appendChild(element);
+    }
+    return;
+  }
+
+  document.body.appendChild(elements);
+  return;
+}
 function handleRouter() {
   const pathName = window.location.pathname;
 
   switch (pathName) {
     case '/':
-      console.log('Home');
+      const homeElement = HomePage();
+      const rootLayout = RootLayout({
+        children: homeElement,
+      });
+
+      appendBody(rootLayout);
       break;
     case '/home':
-      console.log('Home');
       break;
   }
 }

@@ -1,0 +1,16 @@
+.menu__section {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-2;
+  & > .menu__section-title {
+    font-size: $font-size-desktop-heading-3;
+    color: $color-black;
+    font-weight: $font-weight-medium;
+  }
+
+  & > .menu__section-product-list {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-2;
+  }
+}

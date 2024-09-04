@@ -1,0 +1,17 @@
+.cart__product-list-section {
+  flex: 1;
+  height: 100%;
+  & > div.cart__product-list-section-heading {
+    margin: $spacing-3 0;
+    font-size: $font-size-mobile-heading-3;
+    font-weight: $font-weight-medium;
+    color: $color-black;
+    text-align: right;
+  }
+
+  & > ul.cart__product-list {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-2;
+  }
+}

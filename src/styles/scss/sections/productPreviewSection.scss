@@ -1,0 +1,15 @@
+.product__preview__section {
+  margin: $spacing-4 0px;
+  & > ul.product__preview__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 24px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

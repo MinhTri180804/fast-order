@@ -1,1 +1,48 @@
+@import './core/reset';
 @import './core/variables';
+
+// Components
+@import './components/header.scss';
+@import './components/searchInput.scss';
+@import './components/categoryTags.scss';
+@import './components/productPreview.scss';
+@import './components/product.scss';
+@import './components/modal.scss';
+@import './components/cartProduct.scss';
+
+// Sections
+@import './sections/productPreviewSection.scss';
+@import './sections/menuSection.scss';
+@import './sections/cartProductListSection.scss';
+@import './sections/invoiceSection.scss';
+
+// Pages
+@import './pages/home.scss';
+
+@import './pages/cart.scss';
+// Global styles
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Be Vietnam Pro', system-ui;
+  font-weight: 400;
+  font-size: $font-size-desktop-body-2;
+}
+.container {
+  padding-left: 34px;
+  padding-right: 34px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  & > main {
+    flex: 1;
+    height: 100%;
+    position: relative;
+  }
+}
